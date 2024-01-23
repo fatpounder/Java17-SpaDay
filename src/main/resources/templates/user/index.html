@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th = "http://www.thymeleaf.org/">
 <head>
-    <meta charset="UTF-8" />
-    <title>Spa Menu</title>
+    <meta charset="UTF-8">
+    <title>Hey Y'all!</title>
     <link href="../static/css/styles.css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
 </head>
 <body>
-<h1>My Super Fancy Spa</h1>
-<div id = "clientProfile">
-</div>
-<div id = "servicesMenu">
-</div>
+    <h2 th: text="'Welcome ' + ${user.username} 'to the most lavish salon in all of Arkansas!'"></h2>
+    <a th:href="@{/}">Choose some stuff to buy!</a>
 </body>
 </html>
